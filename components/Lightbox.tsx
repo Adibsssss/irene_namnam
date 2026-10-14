@@ -113,7 +113,10 @@ export function Lightbox({
       // iOS Safari doesn't reliably honor the `download` attribute or a
       // programmatic anchor click for images — the native share sheet
       // (with its own "Save Image" action) is the reliable path there.
-      if (typeof navigator !== "undefined" && navigator.canShare) {
+      const isAppleTouchDevice =
+        /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+        (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+      if (isAppleTouchDevice && navigator.canShare) {
         const shareFile = new File([blob], fileName, {
           type: blob.type || currentPhoto.mimeType,
         });
