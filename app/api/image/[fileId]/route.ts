@@ -1,13 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { DriveApiError, getPreviewResponse } from '@/lib/google-drive';
-import { isValidDriveFileId } from '@/lib/validation';
+import { CloudinaryApiError, getPreviewResponse } from '@/lib/cloudinary';
+import { isValidCloudinaryPublicId } from '@/lib/validation';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 export async function GET(req: NextRequest, { params }: { params: { fileId: string } }) {
   const { fileId } = params;
-  if (!isValidDriveFileId(fileId)) {
+  if (!isValidCloudinaryPublicId(fileId)) {
     return NextResponse.json({ error: 'Photo not found.' }, { status: 404 });
   }
 
@@ -28,8 +28,8 @@ export async function GET(req: NextRequest, { params }: { params: { fileId: stri
       },
     });
   } catch (err) {
-    if (err instanceof DriveApiError) {
-      console.error('image proxy Drive error:', err.message, err.detail);
+    if (err instanceof CloudinaryApiError) {
+      console.error('image proxy Cloudinary error:', err.message, err.detail);
     } else {
       console.error('image proxy unexpected error:', err);
     }

@@ -146,7 +146,7 @@ export function Lightbox({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex flex-col overflow-hidden bg-[#b9def5]"
+      className="fixed inset-0 z-50 flex flex-col overflow-hidden bg-[#e4eadc]"
       style={{ opacity: dragging ? Math.max(1 - dragY / 400, 0.5) : 1 }}
       role="dialog"
       aria-modal="true"
@@ -165,7 +165,7 @@ export function Lightbox({
           className="absolute inset-0 h-full w-full scale-110 object-cover opacity-30 blur-3xl saturate-125"
         />
       )}
-      <div className="absolute inset-0 bg-[#dcefff]/65" aria-hidden />
+      <div className="absolute inset-0 bg-[#f3efe4]/65" aria-hidden />
 
       <div className="relative flex items-center justify-between px-4 pt-[max(1rem,env(safe-area-inset-top))]">
         <span className="rounded-full border border-white/50 bg-white/45 px-2.5 py-1 text-[12px] font-medium text-ink backdrop-blur-sm">
@@ -198,7 +198,7 @@ export function Lightbox({
         style={{ transform: `translateY(${dragY}px)` }}
       >
         {imageError ? (
-          <p className="px-8 text-center text-[14px] text-white/70">
+          <p className="px-8 text-center text-[14px] text-ink/70">
             This photo couldn&rsquo;t be loaded.
           </p>
         ) : (
@@ -209,7 +209,7 @@ export function Lightbox({
             onLoad={() => setLoaded(true)}
             onError={() => setImageError(true)}
             draggable={false}
-            className={`max-h-full max-w-full select-none object-contain shadow-[0_20px_60px_rgba(35,92,139,0.28)] transition-opacity duration-300 ${
+            className={`max-h-full max-w-full select-none object-contain shadow-[0_20px_60px_rgba(47,61,47,0.25)] transition-opacity duration-300 ${
               loaded ? "opacity-100" : "opacity-0"
             }`}
           />

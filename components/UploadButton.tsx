@@ -34,7 +34,7 @@ export function UploadButton({ onFilesSelected }: UploadButtonProps) {
       <div className="fixed inset-x-0 bottom-0 z-40 flex justify-center px-4 pb-[max(1.25rem,env(safe-area-inset-bottom))]">
         <div className="flex w-full max-w-md flex-col items-stretch gap-2">
           {menuOpen && (
-            <div className="animate-slide-up overflow-hidden rounded-2xl border border-line bg-paper shadow-[0_12px_28px_rgba(30,42,120,0.18)]">
+            <div className="animate-slide-up overflow-hidden rounded-2xl border border-line bg-paper shadow-[0_12px_28px_rgba(47,61,47,0.18)]">
               <button
                 type="button"
                 onClick={() => libraryInputRef.current?.click()}

@@ -63,7 +63,7 @@ export function MasonryGrid({ photos, newIds, onOpen }: MasonryGridProps) {
   });
 
   return (
-    <div className="corkboard-texture flex gap-4 rounded-[1.75rem] px-3 pb-2 pt-4 sm:gap-5 sm:px-4">
+    <div className="corkboard-texture flex gap-3 rounded-[1.75rem] px-3 pb-3 pt-4 sm:gap-5 sm:px-4 sm:pb-4 lg:gap-6 lg:rounded-[2rem] lg:px-6 lg:pb-6 lg:pt-6">
       {columns.map((columnItems, colIndex) => (
         <div key={colIndex} className="flex flex-1 flex-col gap-4 sm:gap-5">
           {columnItems.map(({ photo, index }) => (

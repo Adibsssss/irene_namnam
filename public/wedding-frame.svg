@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <g id="sprig">
+      <path d="M0 0C90 60 170 190 200 340" fill="none" stroke="#8fa68a" stroke-width="3" stroke-linecap="round"/>
+      <path d="M0 0C120 20 260 30 380 90" fill="none" stroke="#8fa68a" stroke-width="3" stroke-linecap="round"/>
+      <g fill="#a9c0a4" opacity=".9">
+        <ellipse cx="60" cy="48" rx="36" ry="14" transform="rotate(40 60 48)"/>
+        <ellipse cx="108" cy="112" rx="36" ry="14" transform="rotate(-25 108 112)"/>
+        <ellipse cx="140" cy="172" rx="38" ry="15" transform="rotate(60 140 172)"/>
+        <ellipse cx="170" cy="245" rx="36" ry="14" transform="rotate(-10 170 245)"/>
+        <ellipse cx="192" cy="318" rx="34" ry="13" transform="rotate(75 192 318)"/>
+      </g>
+      <g fill="#c9d8c3" opacity=".95">
+        <ellipse cx="100" cy="22" rx="34" ry="13" transform="rotate(-12 100 22)"/>
+        <ellipse cx="170" cy="40" rx="36" ry="14" transform="rotate(22 170 40)"/>
+        <ellipse cx="250" cy="52" rx="34" ry="13" transform="rotate(-18 250 52)"/>
+        <ellipse cx="330" cy="78" rx="32" ry="12" transform="rotate(28 330 78)"/>
+      </g>
+      <circle cx="132" cy="92" r="7" fill="#e7d9bd"/>
+      <circle cx="214" cy="46" r="6" fill="#e7d9bd"/>
+      <circle cx="156" cy="208" r="6" fill="#e7d9bd"/>
+    </g>
+  </defs>
+  <use href="#sprig"/>
+  <use href="#sprig" transform="translate(1200 0) scale(-1 1)"/>
+  <use href="#sprig" transform="translate(0 900) scale(1 -1)"/>
+  <use href="#sprig" transform="translate(1200 900) scale(-1 -1)"/>
+</svg>

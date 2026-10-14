@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 // Bump this key when the welcome instructions materially change so returning
 // guests receive the updated guidance once as well.
-const STORAGE_KEY = 'event-gallery:onboarded-v3';
+const STORAGE_KEY = 'event-gallery:wedding-v1';
 
 export function useOnboarding() {
   const [dismissed, setDismissed] = useState(true); // default hidden until we've checked storage

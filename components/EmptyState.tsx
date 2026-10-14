@@ -10,11 +10,11 @@ export function EmptyState() {
         </span>
       </div>
       <p className="mt-7 font-display text-2xl text-ink">
-        The board is still bare.
+        The album is still empty.
       </p>
       <p className="mt-2 max-w-xs text-sm leading-relaxed text-muted">
-        Add a favorite photo and be the first pin on Kai&apos;s dedication &amp;
-        birthday board.
+        Add a favorite photo and be the first to share a moment from Nam-Nam
+        &amp; Irish&apos;s wedding.
       </p>
     </div>
   );

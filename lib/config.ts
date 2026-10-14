@@ -14,17 +14,17 @@ function required(name: string): string {
 }
 
 export const serverConfig = {
-  get oauthClientId(): string {
-    return required("GOOGLE_OAUTH_CLIENT_ID");
+  get cloudinaryCloudName(): string {
+    return required("CLOUDINARY_CLOUD_NAME");
   },
-  get oauthClientSecret(): string {
-    return required("GOOGLE_OAUTH_CLIENT_SECRET");
+  get cloudinaryApiKey(): string {
+    return required("CLOUDINARY_API_KEY");
   },
-  get oauthRefreshToken(): string {
-    return required("GOOGLE_OAUTH_REFRESH_TOKEN");
+  get cloudinaryApiSecret(): string {
+    return required("CLOUDINARY_API_SECRET");
   },
-  get driveFolderId(): string {
-    return required("GOOGLE_DRIVE_FOLDER_ID");
+  get cloudinaryTag(): string {
+    return process.env.CLOUDINARY_TAG?.trim() || "namnam-irish-wedding";
   },
   get maxFileSizeBytes(): number {
     const mb = Number(process.env.MAX_FILE_SIZE_MB ?? "100");

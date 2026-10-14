@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: irene-namnam
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start
+    healthCheckPath: /api/health
+    autoDeployTrigger: commit
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: CLOUDINARY_CLOUD_NAME
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_API_SECRET
+        sync: false
+      - key: CLOUDINARY_TAG
+        value: namnam-irish-wedding
+      - key: MAX_FILE_SIZE_MB
+        value: "100"
+      - key: GALLERY_PAGE_SIZE
+        value: "20"

@@ -9,20 +9,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Dedication & birthday: a blessing-blue sky as the anchor color,
+        // Wedding palette: a warm ivory base with botanical sage accents.
         // warmed by an antique-gold "candle" accent and a soft blush used
         // the way flowers show up at a christening — sparingly, as trim,
         // never as a competing hue.
-        ink: "#1b2a52", // dusk-blue for all body/heading text
-        paper: "#f6f9ff", // near-white with a whisper of blue
-        line: "#dce6f7", // pale blue hairline/border
-        muted: "#5c6b8c", // blue-grey secondary text
-        coral: "#d9a63e", // antique gold — primary action / candlelight accent
-        peach: "#f0c4bc", // soft blush — tape, gentle fills
-        butter: "#8fc3ec", // sky blue — the lightest "main color" note
-        sage: "#9fc7b8", // quiet eucalyptus green, used sparingly
-        plum: "#14204a", // deep midnight blue — hero, overlays, lightbox
-        rose: "#d98f76", // dusty blush-terracotta, sparing warm highlight
+        ink: "#3b4a3a", // dusk-blue for all body/heading text
+        paper: "#faf7f0", // near-white with a whisper of blue
+        line: "#e4dfd0", // pale blue hairline/border
+        muted: "#7a8570", // blue-grey secondary text
+        coral: "#7d9a7a", // antique gold — primary action / candlelight accent
+        peach: "#eadfc9", // soft blush — tape, gentle fills
+        butter: "#d9ceb2", // sky blue — the lightest "main color" note
+        sage: "#a9c0a4", // quiet eucalyptus green, used sparingly
+        plum: "#2f3d2f", // deep midnight blue — hero, overlays, lightbox
+        rose: "#c9a88a", // dusty blush-terracotta, sparing warm highlight
       },
       fontFamily: {
         // Names come from the @fontsource-variable packages imported in
@@ -55,9 +55,9 @@ const config: Config = {
           "50%": { transform: "scale(1.03)" },
         },
         "glow-pulse": {
-          "0%": { boxShadow: "0 0 0 0 rgba(217,166,62,0.5)" },
-          "70%": { boxShadow: "0 0 0 16px rgba(217,166,62,0)" },
-          "100%": { boxShadow: "0 0 0 0 rgba(217,166,62,0)" },
+          "0%": { boxShadow: "0 0 0 0 rgba(125,154,122,0.5)" },
+          "70%": { boxShadow: "0 0 0 16px rgba(125,154,122,0)" },
+          "100%": { boxShadow: "0 0 0 0 rgba(125,154,122,0)" },
         },
         tick: {
           "0%": { transform: "scale(1)" },
